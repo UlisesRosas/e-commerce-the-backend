@@ -1,0 +1,28 @@
+{
+  "name": "e-commerce-the-backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
+    "watch": "nodemon server.js",
+    "seed": "node seeds/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/UlisesRosas/e-commerce-the-backend.git"
+  },
+  "author": "Ulises",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/UlisesRosas/e-commerce-the-backend/issues"
+  },
+  "homepage": "https://github.com/UlisesRosas/e-commerce-the-backend#readme",
+  "dependencies": {
+    "dotenv": "^16.0.0",
+    "express": "^4.17.3",
+    "mysql2": "^2.3.3",
+    "sequelize": "^6.17.0"
+  }
+}
