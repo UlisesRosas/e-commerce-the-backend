@@ -11,7 +11,8 @@ app.use(express.urlencoded({ extended: true }));
 app.use(routes);
 
 // sync sequelize models to the database, then turn on the server
-sequelize.sync({force: true}).then(() =>{
+// only force false if you need to add a new table
+sequelize.sync({force: false}).then(() =>{
 
   app.listen(PORT, () => {
     console.log(`App listening on port ${PORT}!`);
